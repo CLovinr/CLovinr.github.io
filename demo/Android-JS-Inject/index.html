@@ -5,12 +5,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="UTF-8">
 		<title>Android-JS-Inject</title>
+		<link rel="stylesheet" type="text/css" href="../../lib/prism.css" />
+		<script src="../../lib/prism.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.code-pre {
+				max-height: 500px;
+				font-size: 0.8em;
+			}
+		</style>
 	</head>
 
 	<body>
-		
-		
-		
+
+		<a href="https://github.com/CLovinr/Android-JS-Inject" target="_blank">获取完整的demo</a>
+		<h2>java端</h2>
+		<h3>
+			接口类:Js1.java
+		</h3>
+		<p>
+			所有public、非static且第一个参数是WEBView的成员函数，都会被注入到js端。
+		</p>
+		<pre class="code-pre"><code class="language-java" id="Js1"></code></pre>
+
+		<h2>java端</h2>
+		<h3>
+			Activity:FunctionActivity.java
+		</h3>
+		<p>
+
+		</p>
+
+		<pre class="code-pre"><code class="language-java" id="FunctionActivity"></code></pre>
+
+		<h2>html端</h2>
+		<h3>
+			html:testSelf.html
+		</h3>
+		<p>
+			手动注入，需要引入js
+		</p>
+
+		<pre class="code-pre"><code class="language-html" id="testSelf"></code></pre>
+
+		<h2>html端</h2>
+		<h3>
+			html:testAuto.html
+		</h3>
+		<p>
+			自动注入，无需要引入js
+		</p>
+
+		<pre class="code-pre"><code class="language-html" id="testAuto"></code></pre>
+
 	</body>
 
 </html>
