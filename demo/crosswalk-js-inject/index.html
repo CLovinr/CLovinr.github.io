@@ -179,6 +179,9 @@ public class Js1
 				test.js1.toast(call("jsFun!"));
 				return "return from js!";
 			});
+			
+			var callback = test.js1.javaCall();
+			test.js1.toast(callback());
 </code></pre>
 		<div style="height: 200px;">
 
